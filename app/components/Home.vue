@@ -12,13 +12,13 @@
       />
       <Image
         v-if="image1"
-        @click=""
+        @click="img1"
         src="https://www.wallpaperup.com/uploads/wallpapers/2016/10/14/1026018/c3eea88412a4f3718761e0a406dec452.jpg"
         stretch="none"
       />
       <Image
         v-if="image2"
-        @click=""
+        @click="img2"
         src="https://1.bp.blogspot.com/-9dyKiLdml6g/UPe81_5qlqI/AAAAAAAAcuU/_3qTICKLzPQ/s1600/tirol2.jpg"
         stretch="none"
       />
