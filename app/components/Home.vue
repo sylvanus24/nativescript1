@@ -1,35 +1,47 @@
 <template>
   <Page>
     <ActionBar>
-      <Label text="Home" class="font-bold text-lg"/>
+      <Label text="Home" class="font-bold text-lg" />
     </ActionBar>
 
     <GridLayout>
-      <Label class="text-xl align-middle text-center text-gray-500" :text="message" @tap="logMessage" />
+      <Label
+        class="text-xl align-middle text-center text-gray-500"
+        :text="message"
+        @tap="logMessage"
+      />
+      <Image
+        src="https://art.nativescript-vue.org/NativeScript-Vue-White-Green.png"
+        stretch="none"
+      />
+      <Image
+        src="https://art.nativescript-vue.org/NativeScript-Vue-White-Green.png"
+        stretch="none"
+      />
     </GridLayout>
   </Page>
 </template>
 
 <script lang="ts">
-  import Vue from "nativescript-vue";
+import Vue from 'nativescript-vue';
 
-  export default Vue.extend({
-    computed: {
-      message() {
-        return "Blank {N}-Vue app";
-      }
+export default Vue.extend({
+  computed: {
+    message() {
+      return 'Blank {N}-Vue app';
     },
+  },
 
-    methods: {
-      logMessage() {
-        console.log('You have tapped the message!')
-      }
-    }
-  });
+  methods: {
+    logMessage() {
+      console.log('You have tapped the message!');
+    },
+  },
+});
 </script>
 
 <style>
-  /* .info {
+/* .info {
     font-size: 20;
   } */
 </style>
